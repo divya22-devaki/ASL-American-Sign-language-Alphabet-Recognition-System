@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ASL Sign Language Prediction Project</title>
+    <style>
+        /* General Style */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header */
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #0073e6;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 40px 0;
+        }
+
+        /* Section Style */
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 24px;
+            color: #0073e6;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 5px;
+        }
+        .section p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.7;
+        }
+        .section ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            list-style-type: square;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-title">About Our Project: ASL Sign Language Prediction</div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Project Overview -->
+    <div class="section">
+        <h2>Project Overview</h2>
+        <p>This project is an AI-powered American Sign Language (ASL) prediction system that translates hand gestures into readable text, facilitating communication between ASL speakers and non-ASL speakers. The core of this system is a deep learning model based on VGG16 architecture, which is fine-tuned to recognize ASL gestures.</p>
+    </div>
+
+    <!-- Project Objective -->
+    <div class="section">
+        <h2>Objective</h2>
+        <p>The main objective is to build a user-friendly tool that bridges communication gaps by accurately identifying ASL gestures, helping create a more inclusive environment for those who rely on sign language.</p>
+    </div>
+
+    <!-- Key Features -->
+    <div class="section">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Real-time ASL gesture recognition with high accuracy using VGG16.</li>
+            <li>Image upload functionality integrated with a web interface built using Flask.</li>
+            <li>Simple and responsive UI for users to navigate and get predictions easily.</li>
+            <li>Optimized for quick response times and seamless communication support.</li>
+            <li>Adaptable for adding new gestures and expanding the vocabulary in future updates.</li>
+        </ul>
+    </div>
+
+    <!-- Technologies Used -->
+    <div class="section">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>Python & TensorFlow/Keras:</strong> For building and fine-tuning the VGG16-based deep learning model tailored for ASL gesture recognition.</li>
+            <li><strong>Flask:</strong> Used as the backend framework to handle image uploads and API requests for predictions.</li>
+            <li><strong>HTML, CSS:</strong> For creating an interactive and user-friendly front-end interface.</li>
+            <li><strong>OpenCV:</strong> Utilized for preprocessing images before passing them to the model for accurate predictions.</li>
+        </ul>
+    </div>
+
+    <!-- Future Enhancements -->
+    <div class="section">
+        <h2>Future Enhancements</h2>
+        <p>Planned future improvements include:</p>
+        <ul>
+            <li>Adding more complex ASL phrases and gestures.</li>
+            <li>Integrating audio output for translating gestures to spoken words.</li>
+            <li>Creating a mobile app version for on-the-go use.</li>
+            <li>Using continuous learning to improve the model's accuracy as more data is added.</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

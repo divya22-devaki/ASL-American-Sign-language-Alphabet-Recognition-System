@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Sign Language Prediction</title>
+    <style>
+        /* General Style */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0eafc;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 8px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar a {
+            color: #fff;
+            padding: 4px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 2px;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            padding: 60px 50px;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/1600x900/?technology,sign-language');
+            background-size: cover;
+            background-position: center;
+            color: #f4f4f9;
+        }
+        .text-content {
+            max-width: 45%;
+            margin-right: 30px; /* Adds space between text and image */
+        }
+        .text-content h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #f9f9f9;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+        }
+        .text-content p {
+            font-size: 15px;
+            line-height: 1.2;
+            color: #ddd;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+            text-align: justify;
+        }
+
+        /* Prediction Button */
+        .prediction-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .prediction-button:hover {
+            background-color: #ff784e;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Prediction Image */
+        .prediction-image {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .prediction-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .prediction-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    American Sign Language Prediction
+</div>
+
+<div class="navbar">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+    <div class="text-content">
+        <h1>Speak with Your Hands: Our AI-Powered Sign Language Predictor</h1>
+        <p>Use our innovative technology to interpret American Sign Language and facilitate better communication. This tool is designed to help bridge communication gaps and empower users through accessible language interpretation.</p>
+        <a href="prediction.html" class="prediction-button">Start Prediction</a>
+    </div>
+    <div class="prediction-image">
+        <img src="{{ url_for('static', filename='img.jpg') }}" alt="ASL Hand Signs Chart">
+    </div>
+</div>
+
+</body>
+</html>
