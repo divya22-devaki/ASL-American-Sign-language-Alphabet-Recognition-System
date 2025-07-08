@@ -1,1 +1,0 @@
-# ASL-American-Sign-language-Alphabet-Recognition-System
